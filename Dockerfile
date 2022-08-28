@@ -37,7 +37,7 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o 
     apt-get update && \
     apt-get install -y ros-humble-desktop
 
-RUN ln -sf /opt/ros/humble/setup.bash /etc/profile.d/ros-humble-setup.bash
+RUN echo "source /opt/ros/humble/setup.bash" > /etc/profile.d/ros-humble-setup.sh
 
 USER vscode
 RUN pip install --user \
