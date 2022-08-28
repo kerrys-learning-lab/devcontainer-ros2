@@ -36,12 +36,9 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=semver,pattern={{version}}
-            type=ref,event=branch
-            type=ref,event=tag
-            type=ref,event=pr
-            type=sha
-            type=edge,branch=main
+            type=pep440,pattern=v{{version}}
+            type=sha,prefix={{branch}}-
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
@@ -66,6 +63,6 @@ jobs:
         name: Create bump and changelog
         uses: commitizen-tools/commitizen-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACTIONS_REPO_TOKEN }}
       - name: Print Version
         run: echo "${{ steps.cz.outputs.version }}"
