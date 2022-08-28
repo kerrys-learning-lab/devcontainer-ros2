@@ -1,3 +1,25 @@
+## v0.3.2 (2022-08-28)
+
+### Fix
+
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+
+## v0.3.1 (2022-08-28)
+
+### Fix
+
+- Tag action
+
+## v0.3.0 (2022-08-28)
+
+### Feat
+
+- Add rosdep package; CI tag format
+
 ## 0.2.1 (2022-08-28)
 
 ### Fix
