@@ -1,3 +1,10 @@
+## v0.3.4 (2022-08-28)
+
+### Fix
+
+- Token for tagging
+- Token for tagging
+
 ## v0.3.3 (2022-08-28)
 
 ### Fix
