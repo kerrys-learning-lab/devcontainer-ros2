@@ -12,6 +12,9 @@ USER root
 RUN apt-get update && \
     apt-get upgrade && \
     apt-get install -y  bash-completion \
+                        i2c-tools \
+                        libi2c0 \
+                        libi2c-dev \
                         pip
 
 # https://docs.docker.com/engine/install/ubuntu/
@@ -35,7 +38,8 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o 
     source /etc/os-release && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu ${UBUNTU_CODENAME} main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
     apt-get update && \
-    apt-get install -y ros-humble-desktop
+    apt-get install -y  python3-colcon-common-extensions \
+                        ros-humble-desktop
 
 RUN echo "source /opt/ros/humble/setup.bash" > /etc/profile.d/ros-humble-setup.sh
 
