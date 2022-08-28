@@ -1,4 +1,3 @@
 commitizen:
   name: cz_conventional_commits
-  version: 0.1.2
-  # bump_message: "bump: version $current_version → $new_version [ci skip]"
+  version: 0.2.0
