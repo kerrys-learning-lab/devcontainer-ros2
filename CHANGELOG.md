@@ -1,3 +1,13 @@
+## v0.3.2 (2022-08-28)
+
+### Fix
+
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+- Run on all pushes
+
 ## v0.3.1 (2022-08-28)
 
 ### Fix
