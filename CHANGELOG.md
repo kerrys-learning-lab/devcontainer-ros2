@@ -1,3 +1,9 @@
+## v0.3.0 (2022-08-28)
+
+### Feat
+
+- Add rosdep package; CI tag format
+
 ## 0.2.1 (2022-08-28)
 
 ### Fix
