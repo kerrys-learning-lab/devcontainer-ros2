@@ -2,10 +2,12 @@ name: Docker image workflow
 
 on:
   push:
+  create:
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  GITHUB_TOKEN: ${{ secrets.ACTIONS_REPO_TOKEN }}
 
 jobs:
   build-and-push-image:
@@ -58,6 +60,6 @@ jobs:
         name: Update version and changelog
         uses: commitizen-tools/commitizen-action@master
         with:
-          github_token: ${{ secrets.ACTIONS_REPO_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Print Version
         run: echo "${{ steps.cz.outputs.version }}"
