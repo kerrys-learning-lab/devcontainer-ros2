@@ -53,7 +53,7 @@ jobs:
 
   bump-version:
     needs: build-and-push-image
-    if: (github.ref_protected && !startsWith(github.event.head_commit.message, 'bump:') )
+    if: github.ref_protected && !startsWith(github.event.head_commit.message, 'bump:')
     runs-on: ubuntu-latest
     name: "Bump version and create changelog with commitizen"
     steps:
@@ -64,10 +64,11 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
       - id: cz
         name: Update version and changelog
-        uses: commitizen-tools/commitizen-action@master
+        uses: kerrys-learning-lab/bump-version-action@main
         with:
-          github_token: ${{ secrets.ACTIONS_REPO_TOKEN }}
-          git_name: ${{ github.repository_owner }}-actions
-          git_email: ${{ github.repository_owner }}-actions[bot]@users.noreply.github.com
+          github_actor: ${{ secrets.KERRYS_LEARNING_LAB_ACTOR }}
+          github_token: ${{ secrets.KERRYS_LEARNING_LAB_TOKEN }}
+          git_name: ${{ github.repository_owner }}
+          git_email: ${{ github.repository_owner }}
       - name: Print Version
         run: echo "${{ steps.cz.outputs.version }}"
