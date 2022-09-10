@@ -1,8 +1,15 @@
+## v0.3.5 (2022-09-10)
+
+### Fix
+
+- Incorrect ref in bump-version (#12)
+- Switch to kerrys-learning-lab/bump-version-action
+- Test inability to access tagging token
+
 ## v0.3.4 (2022-08-28)
 
 ### Fix
 
-- Token for tagging
 - Token for tagging
 
 ## v0.3.3 (2022-08-28)
@@ -15,10 +22,6 @@
 
 ### Fix
 
-- Run on all pushes
-- Run on all pushes
-- Run on all pushes
-- Run on all pushes
 - Run on all pushes
 
 ## v0.3.1 (2022-08-28)
@@ -39,7 +42,5 @@
 
 - Add libi2c, colcon; Updated dev lifecycle scripts
 - CI / dependabot.yml
-- CI / dependabot.yml
 - CI pipeline and profile.d
-- Initial development
 - Initial development
