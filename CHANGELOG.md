@@ -1,3 +1,9 @@
+## v0.3.6 (2022-09-10)
+
+### Fix
+
+- Update actor for build actions (#13)
+
 ## v0.3.5 (2022-09-10)
 
 ### Fix
