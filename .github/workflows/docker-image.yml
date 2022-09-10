@@ -96,7 +96,7 @@ jobs:
         with:
           repository: kerrys-learning-lab/bump-version-action
           path: bump-version-action
-          ref: refs/head/main
+          ref: refs/heads/main
           token: ${{ secrets.KERRYS_LEARNING_LAB_TOKEN }}
       - name: Update version and changelog
         id: cz
