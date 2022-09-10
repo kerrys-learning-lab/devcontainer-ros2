@@ -1,3 +1,13 @@
+## v0.3.5 (2022-09-10)
+
+### Fix
+
+- Incorrect ref in bump-version (#12)
+- Switch to kerrys-learning-lab/bump-version-action
+- Switch to kerrys-learning-lab/bump-version-action
+- Switch to kerrys-learning-lab/bump-version-action
+- Test inability to access tagging token
+
 ## v0.3.4 (2022-08-28)
 
 ### Fix
