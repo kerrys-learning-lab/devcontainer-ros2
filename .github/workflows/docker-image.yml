@@ -77,8 +77,11 @@ jobs:
           git_email: ${{ github.repository_owner }}
           commit: false
           push: false
-      - name: Print Version
-        run: echo "${{ steps.cz.outputs.version }}"
+      - name: Print Values
+        run: |
+          echo "git_name:   ${{ github.repository_owner }}"
+          echo "git_email:  ${{ github.repository_owner }}"
+          echo "version:    ${{ steps.cz.outputs.version }}"
 
   bump-version:
     needs: build-and-push-image
