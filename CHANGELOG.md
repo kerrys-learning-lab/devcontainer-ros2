@@ -1,3 +1,9 @@
+## v0.3.7 (2022-09-16)
+
+### Fix
+
+- Leave container default user as root (#14)
+
 ## v0.3.6 (2022-09-10)
 
 ### Fix
