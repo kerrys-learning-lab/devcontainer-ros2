@@ -45,9 +45,10 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o 
 
 RUN echo "source /opt/ros/humble/setup.bash" > /etc/profile.d/ros-humble-setup.sh
 
-USER vscode
-RUN pip install --user \
-                --no-warn-script-location  \
-                ansible \
-                commitizen
+RUN su  --shell /usr/bin/bash \
+        --command "pip install  --user \
+                                --no-warn-script-location  \
+                                ansible \
+                                commitizen" \
+        vscode
 
