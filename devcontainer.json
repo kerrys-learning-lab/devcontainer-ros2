@@ -4,7 +4,6 @@
 		"docker-compose.yml"
 	],
 	"workspaceFolder": "/workspace",
-	"remoteUser": "vscode",
 	"service": "dev",
 	"extensions": [
 		"github.remotehub",

@@ -5,6 +5,7 @@ services:
     build:
       context: .
     entrypoint: bash -c "while true; do sleep 1000; done"
+    user: vscode
     volumes:
       - source: ..
         target: /workspace
