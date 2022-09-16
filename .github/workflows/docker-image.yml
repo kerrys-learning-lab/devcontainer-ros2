@@ -1,7 +1,6 @@
 name: Docker image workflow
 
-on:
-  push:
+on: push
 
 env:
   REGISTRY: ghcr.io
