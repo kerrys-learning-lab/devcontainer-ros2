@@ -10,7 +10,7 @@ SHELL ["/bin/bash", "-c"]
 
 USER root
 RUN apt-get update && \
-    apt-get upgrade && \
+    apt-get upgrade -y && \
     apt-get install -y  bash-completion \
                         i2c-tools \
                         libi2c0 \
