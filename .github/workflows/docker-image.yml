@@ -1,8 +1,11 @@
 name: Docker image workflow
 
 on:
-  - push
-  - create
+  push:
+    branches:
+      - "*"
+    tags:
+      - v**
 
 env:
   REGISTRY: ghcr.io
