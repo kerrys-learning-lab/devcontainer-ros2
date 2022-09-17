@@ -1,5 +1,5 @@
 {
-	"name": "Ubuntu",
+	"name": "ROS2 Dev",
 	"dockerComposeFile": [
 		"docker-compose.yml"
 	],
