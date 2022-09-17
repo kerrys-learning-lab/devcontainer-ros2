@@ -1,9 +1,8 @@
 version: "3.7"
 
 services:
-  dev:
-    build:
-      context: .
+  ros2-dev:
+    image: ghcr.io/kerrys-learning-lab/devcontainer-ros2:latest
     entrypoint: bash -c "while true; do sleep 1000; done"
     user: vscode
     volumes:
