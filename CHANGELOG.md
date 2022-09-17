@@ -1,3 +1,9 @@
+## v0.3.11 (2022-09-17)
+
+### Fix
+
+- Use organization workflows; add gh cli (#18)
+
 ## v0.3.10 (2022-09-16)
 
 ### Fix
