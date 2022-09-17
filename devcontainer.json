@@ -4,7 +4,7 @@
 		"docker-compose.yml"
 	],
 	"workspaceFolder": "/workspace",
-	"service": "dev",
+	"service": "ros2-dev",
 	"extensions": [
 		"github.remotehub",
 		"github.vscode-pull-request-github",
